@@ -117,9 +117,9 @@ function fetchSongLyrics() {
     }
 
     //?????
-    // porvicional (de las letras de las canciones q agregué muanlmente)
+    // provicional (de las letras de las canciones q agregué manualmente)
     if (manualLyrics[songTitle]) {
-        // Convertir la letra en HTML para que cada palabra sea clickeable
+        // Hacwr q cada palabra sea clickeable
         let lyrics = formatLyrics(manualLyrics[songTitle]);
 
         // Mostrar la letra de la canción manual y la imagen de la canción
