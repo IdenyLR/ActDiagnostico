@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuaLingo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="app-title">
+            <img src="image-removebg-preview.png" alt="Logo" class="app-logo" />
+            DuaLingo
+        </h1>
+        
+        <input type="text" id="search" placeholder="Buscar canciones" />
+
+        <select id="song" onchange="fetchSongLyrics()">
+            <option value="">Elige una canción</option>
+        </select>
+
+        <div id="lyrics-container">
+            <p>Selecciona una canción para ver su letra.</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

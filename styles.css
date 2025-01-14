@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #121212;  
+    color: #fff;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #1e1e1e;  
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.app-title {
+    font-size: 2.5rem;
+    color: #1db954; 
+    margin-bottom: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-logo {
+    width: 75px; 
+    justify-content: center;
+
+    height: auto;
+    margin-right: 10px;  
+}
+
+
+#search {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #1db954; 
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+#search::placeholder {
+    color: #bbb;  
+}
+
+#search:focus {
+    border-color: #1ed760;  
+}
+
+
+#song {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #1db954;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#song:focus {
+    border-color: #1ed760;  
+}
+
+
+#lyrics-container {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.6;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#lyrics-container p {
+    font-size: 1.2rem;
+    color: #bbb;  
+    margin-bottom: 15px;
+}
+
+#lyrics-container a {
+    color: #1db954;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#lyrics-container a:hover {
+    text-decoration: underline;
+}
+
+#lyrics-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.song-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+#lyrics-container {
+    transition: all 0.3s ease-in-out;
+}
+
+.clickable-word {
+    color: #1db954;  
+    cursor: pointer; 
+    text-decoration: underline; 
+}
+
+.clickable-word:hover {
+    color: #1ed760; 
+}
